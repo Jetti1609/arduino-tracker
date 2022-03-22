@@ -1,4 +1,5 @@
 #include <motors.h>
+#include <com.h>
 boolean succ = false;
 void setup(){
     Serial.begin(9600);
@@ -11,3 +12,4 @@ void setup(){
 void loop(){
 
 }
+void initialise();

@@ -5,6 +5,11 @@
 
 const float secondsPerDay = 86164.0905f;
 const float stepspersecond = (secondsPerDay/32000);
-void stepRa1(){
-
+namespace step{
+    enum class Mode{
+        RAforward,
+        RAbackward,
+        DECforward,
+        DECbackward
+    };
 }
