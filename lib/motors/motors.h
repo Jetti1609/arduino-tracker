@@ -11,48 +11,48 @@ namespace step{
     namespace RA{
         void CW(){
             set(DIRPIN_RA, 1);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_RA, 1);
-            delayMicroseconds(50);
-            set(DIRPIN_RA, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_RA, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
+            set(DIRPIN_RA, 0);
+            delayMicroseconds(100);
         }
 
         void CCW(){
             set(DIRPIN_RA, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_RA, 1);
-            delayMicroseconds(50);
-            set(DIRPIN_RA, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_RA, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
+            set(DIRPIN_RA, 0);
+            delayMicroseconds(100);
         }
     }
     namespace DE{
         void CW(){
             set(DIRPIN_DEC, 1);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_DEC, 1);
-            delayMicroseconds(50);
-            set(DIRPIN_DEC, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_DEC, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
+            set(DIRPIN_DEC, 0);
+            delayMicroseconds(100);
             
         }
 
         void CCW(){
             set(DIRPIN_DEC, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_DEC, 1);
-            delayMicroseconds(50);
-            set(DIRPIN_DEC, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
             set(STEPPIN_DEC, 0);
-            delayMicroseconds(50);
+            delayMicroseconds(100);
+            set(DIRPIN_DEC, 0);
+            delayMicroseconds(100);
 
         }
 

@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <motors.h>
 #include <com.h>
 void setup(){
@@ -9,6 +10,7 @@ void setup(){
 
 }
 void loop(){
-    step::RA::CW;
+    step::RA::CW();
+    delayMicroseconds(50000);
 }
 
