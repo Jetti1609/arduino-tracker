@@ -1,6 +1,5 @@
-#include <motors.h>
-#include <com.h>
-boolean succ = false;
+#include <motors.hpp>
+#include <com.hpp>
 void setup(){
     Serial.begin(9600);
     pinMode(STEPPIN_DEC, OUTPUT);
@@ -10,6 +9,6 @@ void setup(){
 
 }
 void loop(){
-
+    step::RA::CW;
 }
-void initialise();
+
