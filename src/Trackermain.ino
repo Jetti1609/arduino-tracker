@@ -1,5 +1,5 @@
-#include <motors.hpp>
-#include <com.hpp>
+#include <motors.h>
+#include <com.h>
 void setup(){
     Serial.begin(9600);
     pinMode(STEPPIN_DEC, OUTPUT);

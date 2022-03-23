@@ -44,7 +44,7 @@
                 "c:\\users\\jetti\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\lib\\gcc\\arm-none-eabi\\4.8.3\\include",
                 "c:\\users\\jetti\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\lib\\gcc\\arm-none-eabi\\4.8.3\\include-fixed",
                 "c:\\users\\jetti\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1\\arm-none-eabi\\include",
-                "C:\\Users\\Jetti\\Documents\\GitHub\\arduino-tracker\\lib\\**"
+                "C:\\Users\\Jetti\\Documents\\GitHub\\arduino-tracker\\**"
             ],
             "forcedInclude": [
                 "C:\\Users\\Jetti\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\sam\\1.6.12\\cores\\arduino\\Arduino.h"
