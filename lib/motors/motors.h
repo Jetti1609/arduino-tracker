@@ -5,8 +5,6 @@
 
 #define set digitalWrite
 
-const float secondsPerDay = 86164.0905f;
-const float stepspersecond = (secondsPerDay/32000);
 namespace step{
     namespace RA{
         void CW(){

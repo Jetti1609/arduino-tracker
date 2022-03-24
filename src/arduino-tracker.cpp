@@ -19,20 +19,25 @@ void loop(){
 
     if(read = 'DEC+'){
         step::DE::CW();
+        Serial.print(read);
     }
     else if(read = 'DEC-'){
         step::DE::CCW();
+        Serial.print(read);
+        
     }
     else if(read = 'RA+'){
         step::RA::CW();
+        Serial.print(read);
     }
     else if(read = 'RA-'){
         step::RA::CCW();
+        Serial.print(read);
     }
     }
     else{
         step::RA::CCW();
-        delay(300);
+        delay(270);
     }
 }
 
