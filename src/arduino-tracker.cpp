@@ -13,33 +13,31 @@ void setup(){
 }
     
 void loop(){
-    if (SerialUSB.available()) {
+    while (SerialUSB.available()) {
     read = SerialUSB.readStringUntil('\n');
     read.trim();
 
-    if(read = 'DEC+'){
+    if(read = 'DEC1'){
         step::DE::CW();
         SerialUSB.print(read);
     }
-    else if(read = 'DEC-'){
+    else if(read = 'DEC2'){
         step::DE::CCW();
         SerialUSB.print(read);
         
     }
-    else if(read = 'RA+'){
+    else if(read = 'RA1'){
         step::RA::CW();
         SerialUSB.print(read);
     }
-    else if(read = 'RA-'){
+    else if(read = 'RA2'){
         step::RA::CCW();
         SerialUSB.print(read);
     }
     delay(5);
     }
-    else{
-        step::RA::CCW();
-        delay(270);
-        SerialUSB.print('.');
-    }
+    step::RA::CCW();
+    delay(2700);
+    SerialUSB.print('.');
 }
 
