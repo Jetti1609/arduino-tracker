@@ -4,7 +4,7 @@
 String read;
 
 void setup(){
-    Serial.begin(9600);
+    SerialUSB.begin(9600);
     pinMode(STEPPIN_DEC, OUTPUT);
     pinMode(STEPPIN_RA, OUTPUT);
     pinMode(DIRPIN_DEC, OUTPUT);
@@ -13,31 +13,33 @@ void setup(){
 }
     
 void loop(){
-    if (Serial.available()) {
-    read = Serial.readStringUntil('\n');
+    if (SerialUSB.available()) {
+    read = SerialUSB.readStringUntil('\n');
     read.trim();
 
     if(read = 'DEC+'){
         step::DE::CW();
-        Serial.print(read);
+        SerialUSB.print(read);
     }
     else if(read = 'DEC-'){
         step::DE::CCW();
-        Serial.print(read);
+        SerialUSB.print(read);
         
     }
     else if(read = 'RA+'){
         step::RA::CW();
-        Serial.print(read);
+        SerialUSB.print(read);
     }
     else if(read = 'RA-'){
         step::RA::CCW();
-        Serial.print(read);
+        SerialUSB.print(read);
     }
+    delay(5);
     }
     else{
         step::RA::CCW();
         delay(270);
+        SerialUSB.print('.');
     }
 }
 
