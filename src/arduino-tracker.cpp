@@ -8,6 +8,7 @@ void setup(){
     pinMode(STEPPIN_RA, OUTPUT);
     pinMode(DIRPIN_DEC, OUTPUT);
     pinMode(DIRPIN_RA, OUTPUT);
+    pinMode(10, INPUT);
 
 }
     

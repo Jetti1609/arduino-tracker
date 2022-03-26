@@ -2,7 +2,7 @@ String read;
 
 namespace com{
     void com(){
-    while (SerialUSB.available()) {
+    if (SerialUSB.available()) {
     read = SerialUSB.readStringUntil('\n');
     read.trim();
 
@@ -24,8 +24,10 @@ namespace com{
         SerialUSB.print(read);
     }
     }
+    else if(digitalRead(10) == HIGH){
     step::RA::CCW();
     delay(2700);
     SerialUSB.print('.');
+    }
 }
 }
