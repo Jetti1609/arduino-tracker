@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <motors.h>
 #include <com.h>
-String read;
 
 void setup(){
     SerialUSB.begin(9600);
@@ -13,6 +12,6 @@ void setup(){
 }
     
 void loop(){
-    com::succ();
+    com::com();
 }
 

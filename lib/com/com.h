@@ -1,5 +1,7 @@
+String read;
+
 namespace com{
-    void succ(){
+    void com(){
     while (SerialUSB.available()) {
     read = SerialUSB.readStringUntil('\n');
     read.trim();
