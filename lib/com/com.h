@@ -23,7 +23,6 @@ namespace com{
         step::RA::CCW();
         SerialUSB.print(read);
     }
-    delay(5);
     }
     step::RA::CCW();
     delay(2700);
