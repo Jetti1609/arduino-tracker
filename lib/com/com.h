@@ -1,33 +1,34 @@
-String read;
+String command;
 
 namespace com{
     void com(){
     if (SerialUSB.available()) {
-    read = SerialUSB.readStringUntil('\n');
-    read.trim();
+    command = SerialUSB.readStringUntil('\n');
+    command.trim();
 
-    if(read = 'DEC1'){
+    if(command.equals("DEC1")){
         step::DE::CW();
-        SerialUSB.print(read);
-    }
-    else if(read = 'DEC2'){
-        step::DE::CCW();
-        SerialUSB.print(read);
         
     }
-    else if(read = 'RA1'){
-        step::RA::CW();
-        SerialUSB.print(read);
+    else if(command.equals("DEC2")){
+        step::DE::CCW();
+        
+        
     }
-    else if(read = 'RA2'){
+    else if(command.equals("RA1")){
+        step::RA::CW();
+        
+    }
+    else if(command.equals("RA2")){
         step::RA::CCW();
-        SerialUSB.print(read);
+        
     }
     }
     else if(digitalRead(10) == HIGH){
     step::RA::CCW();
     delay(2700);
-    SerialUSB.print('.');
+    SerialUSB.print(millis());
     }
+    
 }
 }
