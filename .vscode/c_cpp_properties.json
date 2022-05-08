@@ -12,6 +12,8 @@
                 "c:/Users/Jetti/Documents/GitHub/arduino-tracker/src",
                 "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/motors",
                 "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/com",
+                "c:/Users/Jetti/Documents/GitHub/arduino-tracker/.pio/libdeps/due/LiquidCrystal_I2C",
+                "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/Wire/src",
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/cores/arduino",
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/system/libsam",
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/system/CMSIS/CMSIS/Include",
@@ -19,7 +21,6 @@
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/variants/arduino_due_x",
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/HID/src",
                 "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/SPI/src",
-                "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/Wire/src",
                 ""
             ],
             "browse": {
@@ -29,6 +30,8 @@
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/src",
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/motors",
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/com",
+                    "c:/Users/Jetti/Documents/GitHub/arduino-tracker/.pio/libdeps/due/LiquidCrystal_I2C",
+                    "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/Wire/src",
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/cores/arduino",
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/system/libsam",
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/system/CMSIS/CMSIS/Include",
@@ -36,7 +39,6 @@
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/variants/arduino_due_x",
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/HID/src",
                     "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/SPI/src",
-                    "C:/Users/Jetti/.platformio/packages/framework-arduino-sam/libraries/Wire/src",
                     ""
                 ]
             },

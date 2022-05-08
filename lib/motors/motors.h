@@ -5,13 +5,15 @@
 
 #define set digitalWrite
 
-int RApos = 0;
-int DEpos = 0;
+volatile int RApos1 = 0;
+volatile int DEpos1 = 0;
+volatile int RApos2 = 0;
+volatile int DEpos2 = 0;
 
 namespace step{
     namespace RA{
         void CW(){
-            RApos++;
+            RApos1++;
             set(DIRPIN_RA, 1);
             delayMicroseconds(100);
             set(STEPPIN_RA, 1);
@@ -20,12 +22,12 @@ namespace step{
             delayMicroseconds(100);
             set(DIRPIN_RA, 0);
             delayMicroseconds(100);
-            Serial.print(RApos);
+            Serial.print(RApos1);
             Serial.println("RA");
         }
 
         void CCW(){
-            RApos--;
+            RApos1--;
             set(DIRPIN_RA, 0);
             delayMicroseconds(100);
             set(STEPPIN_RA, 1);
@@ -34,13 +36,13 @@ namespace step{
             delayMicroseconds(100);
             set(DIRPIN_RA, 0);
             delayMicroseconds(100);
-            Serial.print(RApos);
+            Serial.print(RApos1);
             Serial.println("RA");
         }
     }
     namespace DE{
         void CW(){
-            DEpos++;
+            DEpos1++;
             set(DIRPIN_DEC, 1);
             delayMicroseconds(100);
             set(STEPPIN_DEC, 1);
@@ -49,13 +51,13 @@ namespace step{
             delayMicroseconds(100);
             set(DIRPIN_DEC, 0);
             delayMicroseconds(100);
-            Serial.print(DEpos);
+            Serial.print(DEpos1);
             Serial.println("DE");
             
         }
 
         void CCW(){
-            DEpos--;
+            DEpos1--;
             set(DIRPIN_DEC, 0);
             delayMicroseconds(100);
             set(STEPPIN_DEC, 1);
@@ -64,7 +66,7 @@ namespace step{
             delayMicroseconds(100);
             set(DIRPIN_DEC, 0);
             delayMicroseconds(100);           
-            Serial.print(DEpos);
+            Serial.print(DEpos1);
             Serial.println("DE");
 
         }
