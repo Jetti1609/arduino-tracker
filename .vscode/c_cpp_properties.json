@@ -26,7 +26,7 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/Jetti/Documents/GitHub/arduino-tracker/include",
+                    "c:/Users/Jetti/Documents/GitHub/arduino-tracker/**",
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/src",
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/motors",
                     "c:/Users/Jetti/Documents/GitHub/arduino-tracker/lib/com",
